@@ -13,7 +13,7 @@ Kraken2 is a widely used tool for determining the taxonomic content of FASTQ rea
 ## Downlaod 
 
 ```bash
-curl -L https://github.com/username/repo/raw/main/babykraken.tar.gz | tar xz
+curl -L https://github.com/Wytamma/babykraken/blob/master/dist/babykraken.tar.gz?raw=true | tar xz
 ```
 
 ## Run
@@ -116,17 +116,17 @@ Yersinia frederiksenii
 Yersinia pseudotuberculosis
 ```
 
-## Rebild 
+## Rebuild 
 
-To rebuild the DB download all of the genomes in `species_acc_map.csv` from NCBI and save them in `data/genomes/`. 
+To rebuild the Babykraken download all of the genomes in `species_acc_map.csv` from NCBI and save them in `data/genomes/`. 
 
-Create a custom kraken2 DB.
+### Create a custom kraken2 DB
 
 ```bash
 kraken2-build --download-taxonomy --db $DBNAME
 ```
 
-Add the genomes to the library
+### Add the genomes to the library
 ```bash
 for file in data/genomes/*.fna
 do
@@ -134,13 +134,15 @@ do
 done
 ```
 
-Build the DB while setting the `--max-db-size` (10MB is 10485760).
+### Build the DB 
+
+Setting `--max-db-size` (10MB is 10485760).
 
 ```bash
 kraken2-build --build --db $DBNAME --max-db-size 10485760
 ```
 
-Inspect 
+### Inspect 
 
 ```bash
 kraken2-inspect --db ./babykraken | head -n20
@@ -158,13 +160,13 @@ kraken2-inspect --db ./babykraken | head -n20
 100.00  1831041 248     D       2           Bacteria
 ```
 
-Remove unneeded files.
+### Remove unneeded files
 
 ```bash
 kraken2-build --clean --db $DBNAME
 ```
 
-Compress. 
+### Compress
 
 ```bash
 tar czvf ./dist/babykraken.tar.gz babykraken/
