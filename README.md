@@ -118,7 +118,7 @@ Yersinia pseudotuberculosis
 
 ## Rebuild 
 
-To rebuild the Babykraken download all of the genomes in `species_acc_map.csv` from NCBI and save them in `data/genomes/`. 
+To rebuild the BabyKraken download all of the genomes in `species_acc_map.csv` from NCBI and save them in `data/genomes/`. 
 
 ### Create a custom kraken2 DB
 
