@@ -10,7 +10,7 @@ Kraken2 is a widely used tool for determining the taxonomic content of FASTQ rea
 - Simplified setup: BabyKraken streamlines the setup process for new users, eliminating the need for time-consuming downloads or installations of larger databases.
 - Improved testing experience: BabyKraken is designed to facilitate more efficient and effective testing, enabling you to quickly evaluate and refine your pipeline as needed.
 
-## Downlaod 
+## Download 
 
 ```bash
 curl -L https://github.com/MDU-PHL/babykraken/blob/master/dist/babykraken.tar.gz?raw=true | tar xz
