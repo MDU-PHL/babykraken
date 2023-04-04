@@ -123,6 +123,7 @@ To rebuild the Babykraken download all of the genomes in `species_acc_map.csv` f
 ### Create a custom kraken2 DB
 
 ```bash
+export DBNAME=babykraken
 kraken2-build --download-taxonomy --db $DBNAME
 ```
 
