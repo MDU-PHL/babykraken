@@ -146,7 +146,7 @@ kraken2-build --build --db $DBNAME --max-db-size 10485760
 ### Inspect 
 
 ```bash
-kraken2-inspect --db ./babykraken | head -n20
+kraken2-inspect --db ./$DBNAME | head -n20
 ```
 ```
 # Database options: nucleotide db, k = 35, l = 31
@@ -170,5 +170,5 @@ kraken2-build --clean --db $DBNAME
 ### Compress
 
 ```bash
-tar czvf ./dist/babykraken.tar.gz babykraken/
+tar czvf ./dist/babykraken.tar.gz $DBNAME
 ```
