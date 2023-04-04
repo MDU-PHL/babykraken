@@ -13,7 +13,7 @@ Kraken2 is a widely used tool for determining the taxonomic content of FASTQ rea
 ## Downlaod 
 
 ```bash
-curl -L https://github.com/Wytamma/babykraken/blob/master/dist/babykraken.tar.gz?raw=true | tar xz
+curl -L https://github.com/MDU-PHL/babykraken/blob/master/dist/babykraken.tar.gz?raw=true | tar xz
 ```
 
 ## Run
