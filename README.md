@@ -118,7 +118,7 @@ Yersinia pseudotuberculosis
 
 ## Rebuild 
 
-To rebuild the BabyKraken download all of the genomes in `species_acc_map.csv` from NCBI and save them in `data/genomes/`. 
+To rebuild the BabyKraken DB download all of the genomes in `data/species_acc_map.csv` from NCBI and save them in `data/genomes/`. 
 
 ### Create a custom kraken2 DB
 
@@ -137,7 +137,7 @@ done
 
 ### Build the DB 
 
-Setting `--max-db-size` (10MB is 10485760).
+Set `--max-db-size` (10MB is 10485760 bytes).
 
 ```bash
 kraken2-build --build --db $DBNAME --max-db-size 10485760
