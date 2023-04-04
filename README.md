@@ -3,7 +3,7 @@
 A very compact (10MB) Kraken2 database designed for seamless integration with pipelines and testing purposes.
 
 ## Overview
-Kraken2 is a widely used tool for determining the taxonomic content of FASTQ reads. It is often utilized in conjunction with the pre-built Minikraken database. However, the Minikraken database, at 5.5 GB, is too large to be bundled with pipelines effectively. This creates a barrier for new users looking to set up a Kraken2 database for their pipeline. BabyKraken aims to address this issue by providing a small, yet practical, database that can be easily integrated into your pipeline, offering a more convenient solution for both testing and initial setup.
+Kraken2 is a widely used tool for determining the taxonomic content of FASTQ reads. It is often utilized in conjunction with the pre-built Minikraken database. However, the Minikraken database, at 5.5 GB, is too large to be bundled with pipelines effectively. BabyKraken aims to address this issue by providing a small, yet practical, database that can be easily integrated into your pipeline, offering a more convenient solution for both testing and initial setup.
 
 ## Key Features
 - Compact size: At only 10MB, BabyKraken is significantly smaller than the standard Minikraken database, making it easier to bundle with pipelines and reducing resource consumption.
